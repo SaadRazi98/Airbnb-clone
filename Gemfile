@@ -75,3 +75,4 @@ end
 gem 'bcrypt', '~> 3.1.7'
 # #Login
 gem 'jwt'
+gem "tailwindcss-rails", "~> 2.0"
