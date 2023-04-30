@@ -1,11 +1,15 @@
+// Nav Header 🙆🏾‍♂️ 💀
+.nav-header {
+  background-color: white;
+}
 
-// Nav Header
+// Nav Header Contents 
 .nav-container {
   min-height: 80px;
   align-items: center;
 }
 
-// AirBnb Logo 
+// AirBnb Logo -change its color in _colors.scss file
 .logo-link {
   svg {
     display: block;
