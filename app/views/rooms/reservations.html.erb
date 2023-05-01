@@ -1,6 +1,6 @@
 <!-------------RESERVE ROOM----------------->
-<h1>Reserve Room</h1>
 <%= form_for [@room, @reservation], url: reservations_room_path(@room) do |f| %>
+<h1>Reserve Room</h1>
   <%= f.label :start_date %>
   <%= f.date_select :start_date %>
 

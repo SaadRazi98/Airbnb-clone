@@ -1,15 +1,18 @@
 <!-------------LOGIN----------------->
-<h1>Login</h1>
-<%= form_with method: "post", url: "/sessions" do |form| %>
+
+<%= form_with method: "post", url: "/sessions", id: "login-form" do |form| %>
+<h2>Login</h2>
+
   <div>
-    <%= form.label :email %>
     <%= form.email_field :email %>
+    <%= form.label :email %>
   </div>
   <div>
-    <%= form.label :password %>
     <%= form.password_field :password %>
+    <%= form.label :password %>
   </div>
   <div>
-    <%= form.submit "Submit" %>
+    <%= form.submit "Submit", class: "btn btn-primary" %>
   </div>
 <% end%>
+
