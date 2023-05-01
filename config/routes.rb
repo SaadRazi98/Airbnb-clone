@@ -53,5 +53,8 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
   get "/logout" => "sessions#destroy"  
 
-  
+# HOME PAGE
+  get "pages/home"
+  root "pages#home"
+
 end

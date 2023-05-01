@@ -1,0 +1,52 @@
+// Nav Header 🙆🏾‍♂️ 💀
+.nav-header {
+  background-color: white;
+}
+
+  // Nav Header Contents 
+  .nav-container {
+    min-height: 80px;
+    align-items: center;
+  }
+
+    // Nav Header Search Bar
+    .nav-search-bar {
+      background-color: white;
+    }
+
+    // Nav Icon Bell
+    .nav-icon-bell {
+      background-color: white;
+    }
+
+    // Profile Pic
+    .nav-icon-profile-pic {
+      background-color: black;
+    }
+
+    // Profile Dropdown (removes underline)
+    a {
+      text-decoration: none;
+    }
+// AirBnb Logo -change its color in _colors.scss file
+.logo-link {
+  svg {
+    display: block;
+    color: $airbnb-logo;
+  }
+}
+
+// .invalid-inset-input-text-field {
+//   border-color: rgb(244, 63, 94) !important;
+
+//   label {
+//     color: rgb(244, 63, 94) !important;
+//   }
+
+//   input[type="email"], input[type="text"] {
+//     &:focus {
+//       border-color: rgb(244, 63, 94) !important;
+//     }
+//     color: rgb(244, 63, 94) !important;
+//   }
+// } */
