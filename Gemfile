@@ -77,3 +77,4 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'jwt'
 gem "tailwindcss-rails", "~> 2.0"
 gem "sassc-rails" # Use Sass to process CSS
+gem 'foreman'
