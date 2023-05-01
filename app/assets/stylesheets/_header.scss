@@ -24,6 +24,10 @@
       background-color: black;
     }
 
+    // Profile Dropdown (removes underline)
+    a {
+      text-decoration: none;
+    }
 // AirBnb Logo -change its color in _colors.scss file
 .logo-link {
   svg {
