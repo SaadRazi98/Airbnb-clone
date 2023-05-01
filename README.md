@@ -2,12 +2,14 @@
 -Edit .ruby-version to the version of Ruby you want to use then 
 
 # Bundle Install
+run in terminal
 ```ruby
-bundle install
+gem install foreman 
 ```
+
 # Database
 ```ruby
-rails db:setup 
+bundle install 
 ```
 # Server, either
 ```ruby
