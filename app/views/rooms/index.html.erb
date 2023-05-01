@@ -1,9 +1,27 @@
 <!-------------ALL ROOMS (/rooms)----------------->
-<h1>All Rooms</h1>
-<% @rooms.each do |room| %>
-  <h2><%= room.address %></h2>
-  <p>Price: <%= room.price %></p>
-  <p>Description: <%= room.description %></p>
-  <a href="/rooms/<%= room.id %>">More info</a>
-<% end %>
-<a href="/rooms/new">New Room</a>
+<h3>All Available Rooms</h3>
+<div class="card-deck">
+  <% @rooms.each do |room| %>
+    <div class="card" style="width: 18rem;">
+      <% if room.room_images.any? %>
+        <img class="card-img-top" src="<%= room.room_images.first.url %>" alt="Card image cap">
+      <% else %>
+        <img class="card-img-top" src="<https://via.placeholder.com/300x200.png?text=No+Image>" alt="Card image cap">
+      <% end %>
+      <div class="card-body">
+        <h5 class="card-title"><%= room.address %></h5>
+        <p class="card-text">Price: <%= room.price %></p>
+        <p class="card-text">Description: <%= room.description %></p>
+        <a href="/rooms/<%= room.id %>" class="btn btn-secondary">More info</a>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
+
+
+<br>
+<br>
+
+<a href="/rooms/new" class="btn btn-outline-danger">Host a Home</a>

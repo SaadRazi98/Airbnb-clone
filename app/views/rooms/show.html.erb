@@ -1,5 +1,12 @@
 <!-------------ROOM INFO (more info)----------------->
 <h1>Room Info</h1>
+
+<% if @room.room_images.any? %>
+  <img src="<%= @room.room_images.first.url %>" alt="Room Image">
+<% else %>
+  <p>No Image Available</p>
+<% end %>
+
 <h2><%= @room.address %></h2>
 <p>City: <%= @room.city %></p>
 <p>State: <%= @room.state %></p>
@@ -10,10 +17,13 @@
 <p>Total Occupancy: <%= @room.total_occupancy %></p>
 <p>Total Bedrooms: <%= @room.total_bedrooms %></p>
 <p>Total Bathrooms: <%= @room.total_bathrooms %></p>
-<a href="/rooms/<%= @room.id %>/edit">Edit Room</a>
-<a href="/rooms">Back to all Rooms</a>
-<a href="/rooms/<%= @room.id %>" data-turbo-method="delete">Destroy Room</a>
 
-<%# <a href="/rooms/reservations">Reserve Room</a> %>
-<%= link_to "Reserve Room", reservations_room_path(@room) %>
+
+
+<a href="/rooms/<%= @room.id %>/edit" class="btn btn-outline-dark">Edit Room</a>
+<a href="/rooms" class="btn btn-outline-dark">Back to all Rooms</a>
+
+<a href="/rooms/<%= @room.id %>" data-turbo-method="delete" class="btn btn-outline-dark">Destroy Room</a>
+
+<%= link_to "Reserve Room", reservations_room_path(@room), method: :post, class: "btn btn-danger" %>
 

@@ -3,7 +3,7 @@
 @import "_header";
 
 
-// LOGIN FORM
+// ALL FORMS
 
 form {
   margin: 0 auto;
@@ -41,4 +41,19 @@ input[type="submit"]:hover {
 label {
   display: block;
   margin-bottom: 10px;
+}
+
+
+// TILES
+// .card-deck {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+//   width: calc(25% - 10px);
+//   margin-bottom: 20px;
+// }
+
+.card {
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
 }
